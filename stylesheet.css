@@ -1,0 +1,338 @@
+QMainWindow {
+    background-color: #121212;
+}
+
+#nameError, #pathError, #dataError {
+    color: #E50000;
+}
+
+#centralWidget QLabel {
+    color: #cfd0d7;
+}
+
+ElidedLabel {
+    background: #2A2A2A;
+    color: #cfd0d7;
+    border: 1px solid #525252;
+}
+
+#popup {
+    background-color: #202020;
+    border: 1px solid #363636;
+}
+
+#bar, #bar_2, #leftBar {
+    background-color: #202020;
+    border-bottom: 1px solid #363636;
+}
+
+#bar > QPushButton, #bar_2 > QPushButton {
+    border: none;
+    border-image: none;
+    image: url(":/images/branch_open.png");
+}
+
+/* Table Start */
+QTableWidget {
+    selection-background-color: #545454;
+}
+/* Table End */
+
+/* Images Browser Start */
+ImageSourceBrowser {
+    background-color: #121212;
+    border: 1px solid #fff;
+}
+
+ImageSourceBrowser QLabel {
+    color: #cfd0d7;
+}
+
+ImageSourceBrowser > #topBar {
+    background-color: #0A0A0A;
+    border-bottom: 1px solid #fff;
+}
+
+ImageSourceBrowser #leftBrowserPanel {
+    border-right: 1px solid #fff;
+}
+
+ImageSourceBrowser #rightBrowserPanel, ImageSourceBrowser #imagesBrowserGrid {
+    background-color: transparent;
+}
+/* Images Browser End */
+
+/* Project Settings Start */
+ProjectSettings {
+    background-color: #121212;
+    border: 1px solid #fff;
+}
+
+ProjectSettings QLabel {
+    color: #cfd0d7;
+}
+
+ProjectSettings > #topBar {
+    background-color: #0A0A0A;
+    border-bottom: 1px solid #fff;
+}
+/* Project Settings End */
+
+QPushButton[flat="true"] {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+QPushButton[flat="true"]:hover {
+    background-color: #3F3F3F;
+}
+
+QPushButton[flat="true"]:pressed {
+    padding-left: 2px;
+    padding-top: 1px;
+}
+
+/* Slider Start */
+QSlider::groove:horizontal {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 12px;
+}
+
+QSlider::handle:horizontal {
+    background: #3F3F3F;
+    width: 12px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #525252;
+}
+
+QSlider::add-page:horizontal {
+    background: rgb(180, 180, 180);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+QSlider::sub-page:horizontal {
+    background: rgb(100, 100, 100);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+/* Slider End */
+
+/* ScrollBar Start */
+QScrollBar:vertical {
+   border: none;
+   width: 10px;
+   margin: 0px 0px 0px 0px;
+}
+
+QScrollBar:vertical, QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+QScrollBar::handle:vertical {
+   background: #202020;
+   border-radius: 5px;
+   min-height: 0px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #2B2B2B;
+}
+
+QScrollBar::add-line:vertical {
+   height: 0px;
+   subcontrol-position: bottom;
+   subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+   height: 0px;
+   subcontrol-position: top;
+   subcontrol-origin: margin;
+}
+/* Horizontal */
+QScrollBar:horizontal {
+   border: none;
+   height: 10px;
+   margin: 0px 0px 0px 0px;
+}
+
+QScrollBar:horizontal, QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: transparent;
+}
+
+QScrollBar::handle:horizontal {
+   background: #202020;
+   border-radius: 5px;
+   min-width: 0px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #2B2B2B;
+}
+
+QScrollBar::add-line:horizontal {
+   width: 0px;
+   subcontrol-position: right;
+   subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+   width: 0px;
+   subcontrol-position: left;
+   subcontrol-origin: margin;
+}
+/* ScrollBar End */
+
+RecentProject {
+    padding: 10px;
+}
+
+RecentProject:hover {
+    background-color: #222;
+}
+
+/* Checkbox Start */
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/images/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:hover {
+    image: url(:/images/checkbox_unchecked_hover.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/images/checkbox_unchecked_pressed.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/images/checkbox_checked.png);
+}
+
+QCheckBox::indicator:checked:hover {
+    image: url(:/images/checkbox_checked_hover.png);
+}
+
+QCheckBox::indicator:checked:pressed {
+    image: url(:/images/checkbox_checked_pressed.png);
+}
+
+QCheckBox::indicator:indeterminate {
+    image: url(:/images/checkbox_indeterminate.png);
+}
+
+QCheckBox::indicator:indeterminate:hover {
+    image: url(:/images/checkbox_indeterminate_hover.png);
+}
+
+QCheckBox::indicator:indeterminate:pressed {
+    image: url(:/images/checkbox_indeterminate_pressed.png);
+}
+/* Checkbox End */
+
+/* Input fields Start */
+QLineEdit, QSpinBox, QDoubleSpinBox {
+    background: #2A2A2A;
+    color: #cfd0d7;
+    border: 1px solid #525252;
+    padding: 4px;
+}
+
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus {
+    border-color: #747474;
+}
+/* Input fields End */
+
+/* Tree View Start */
+QTreeView {
+    color: #fff;
+    background-color: #121212;
+    border: none;
+}
+
+QTreeView QHeaderView::section {
+    padding-left: 5px;
+    color: #fff;
+    background-color: #2A2A2A;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    border-image: none;
+    image: url(":/images/branch_closed.png");
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+    border-image: none;
+    image: url(":/images/branch_open.png");
+}
+
+QTreeView::item {
+    border: 1px solid transparent;
+}
+
+QTreeView::item:selected {
+    border-color: #4FA0F1;
+    background-color: #27609A;
+    color: #fff;
+}
+/* Tree View End */
+
+QScrollArea, #propertiesContents, #recentListContent {
+    border: none;
+    background-color: #121212;
+}
+
+#zoomPanel {
+    background-color: #0A0A0A;
+}
+
+QSplitter::handle {
+    background-color: #0A0A0A;
+}
+
+/* Menu Start */
+QMenu {
+    color: #fff;
+    background-color: #2A2A2A;
+    border: 1px solid #121212;
+}
+
+QMenu::item {
+    padding: 2px 25px 2px 20px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:selected {
+    border-color: #4FA0F1;
+    background-color: #27609A;
+}
+
+QMenu::item:disabled {
+    color: #888;
+}
+
+QMenuBar {
+    color: #fff;
+    background-color: #0A0A0A;
+}
+
+QMenuBar::item:selected {
+    background-color: #545454;
+}
+/* Menu End */
